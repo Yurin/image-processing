@@ -7,8 +7,8 @@ import javax.imageio.ImageIO;
 public class Photoframe {
 
     public static void main(String[] args) {
-        String inputImagePath = "heart_disney.jpg"; // 入力画像ファイルパス
-        String outputImagePath = "output_cheki.jpg"; // 出力画像ファイルパス
+        String inputImagePath = "night_and_heart3.jpg"; // 入力画像ファイルパス
+        String outputImagePath = "cheki.jpg"; // 出力画像ファイルパス
 
         try {
             BufferedImage originalImage = ImageIO.read(new File(inputImagePath));

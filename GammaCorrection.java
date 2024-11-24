@@ -6,9 +6,9 @@ public class GammaCorrection {
         MyImage output = new MyImage(input.width, input.height);
 
         // ガンマ値を設定
-        double gammaR = 2.0;
-        double gammaG = 0.5;
-        double gammaB = 0.5;
+        double gammaR = 1.0;
+        double gammaG = 0.8;
+        double gammaB = 1.0;
 
         for (int i = 0; i < input.height; i++) {
             for (int j = 0; j < input.width; j++) {

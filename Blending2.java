@@ -5,7 +5,7 @@ public class Blending2 {
 
     static MyImage execute(MyImage var0, MyImage var1) {
         int offsetX = 0; // 任意のX
-        int offsetY = 0; // 任意のY
+        int offsetY = -800; // 任意のY
 
         int width1 = var0.width;
         int width2 = var1.width;

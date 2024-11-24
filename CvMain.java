@@ -5,9 +5,9 @@ public class CvMain {
 
 	static void imageProcessing1() {
 
-		String filename1 = "disney_night.jpg";
+		String filename1 = "4pictures.jpg";
 
-		String filename2 = "disney_night_small.jpg";
+		String filename2 = "4pictures2.jpg";
 
 		MyImage image1, image2;
 	
@@ -16,9 +16,10 @@ public class CvMain {
 		{
 			//image2 = Negative.execute(image1);
 			//image2 = Binalization.execute(image1);
-			//image2 = GammaCorrection.execute(image1);
+			image2 = GammaCorrection.execute(image1);
 			//image2 = SpaceFiltering.execute(image1);	
-			image2 = Scale.execute(image1);
+			//image2 = Rotation.rotate90(image1);
+			//image2 = Scale.execute(image1);
 			//image2 = Rotation.rotate45Right(image1);
 			//image2 = Rotation.rotate45Left(image1);
 			//image2 = Rotation.rotate180(image1);
@@ -32,9 +33,9 @@ public class CvMain {
 
 	static void imageProcessing2() {
 
-		String filename1 = "disney2_castle.jpg";
-		String filename2 = "night_sky.jpeg";
-		String filename3 = "disney_night.jpg";
+		String filename1 = "sea_icho.jpg";
+		String filename2 = "car_darts.jpg";
+		String filename3 = "4pictures.jpg";
 
 		MyImage image1, image2, image3, image0;
 	
@@ -43,15 +44,16 @@ public class CvMain {
 
 		// KMeans kmeans = new KMeans();
 		// kmeans.clustering(image1, 4);
-		// image0 = Chromakey_black_original.execute(image1, kmeans, 3);
+		// image0 = Chromakey_white_original.execute(image1, kmeans, 3);
 
 		//image3 = VirtualStudio.execute(image1, image2, image0); 
 		//image3 = VirtualStudio2.execute(image1, image2, image0);
 		//image3 = AlphaBlending.execute(image1, image2, image0); 	
 		//image3 = AlphaBlending2.execute(image1, image2, image0); 
-		image3 = Blending2.execute(image1, image2); 
-		//image3 = Blending2.execute(image1, image2, image0); 
+		//image3 = Blending1.execute(image1, image2); 
+		//image3 = Blending2.execute(image1, image2); 
 		//image3 = Tiling.execute(image1, image2); 	
+		image3 = Tiling2.execute(image1, image2); 
 
 		JpegFileWriter.write(filename3, image3);
 

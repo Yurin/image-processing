@@ -3,16 +3,16 @@ import java.awt.Color;
 
 public class Blending1 {
 
-    static MyImage execute(MyImage var0, MyImage var1, MyImage var2) {
-        int offsetX = 0; // 任意のX
-        int offsetY = 0; // 任意のY
+    static MyImage execute(MyImage var0, MyImage var1) {
+        int offsetX = 2300; // 任意のX
+        int offsetY = -800; // 任意のY
 
         int width1 = var0.width;
         int width2 = var1.width;
         int height1 = var0.height;
         int height2 = var1.height;
         int maxWidth = Math.max(offsetX + width1, width2);
-        int maxHeight = Math.max(offsetY + height1, height2);
+        int maxHeight = Math.max(offsetY +height1, height2);
         MyImage resultImage = new MyImage(maxWidth, maxHeight);
 
         for (int y = 0; y < maxHeight; ++y) {

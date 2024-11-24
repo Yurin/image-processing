@@ -20,6 +20,24 @@ public class Rotation{//rotate90,180,180scale2,45Right,45Left
         return output;
     }
 
+    static MyImage rotate270(MyImage input) {
+        int width1 = input.width;
+        int height1 = input.height;
+        int width2 = height1; 
+        int height2 = width1; 
+        MyImage output = new MyImage(width2, height2);
+    
+        for (int i = 0; i < height2; i++) {
+            for (int j = 0; j < width2; j++) {
+                double x1 = i; 
+                double y1 = width1 - 1 - j; 
+    
+                calcRGB(input, output, x1, y1, j, i);
+            }
+        }
+        return output;
+    }
+
     static MyImage rotate180(MyImage input) {
         int width1 = input.width;
         int height1 = input.height;

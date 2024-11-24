@@ -4,8 +4,8 @@ public class AlphaBlending2 {
 
     static MyImage execute(MyImage var0, MyImage var1, MyImage var2) {
         double alpha = 0.5 ;
-        int offsetX = 850; // 任意のX
-        int offsetY = 0; // 任意のY
+        int offsetX = 0; // 任意のX
+        int offsetY = -1000; // 任意のY
 
         int width1 = var0.width;
         int width2 = var1.width;
