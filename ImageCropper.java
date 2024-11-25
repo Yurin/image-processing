@@ -26,18 +26,18 @@ public class ImageCropper {
     public static void main(String[] args) {
         try {
             // Load your image; change the path to your image file
-            File inputFile = new File("sea_coat3.jpg");
+            File inputFile = new File("illumi.jpg");
             BufferedImage inputImage = ImageIO.read(inputFile);
 
             // Define the desired width and height
-            int targetWidth = 1000;
+            int targetWidth = 1500;
             int targetHeight = 700;
 
             // Crop the image
             BufferedImage croppedImage = cropImage(inputImage, targetWidth, targetHeight);
 
             // Save the cropped image to a new file
-            File outputFile = new File("sea_coat4.jpg");
+            File outputFile = new File("illumi.jpg");
             ImageIO.write(croppedImage, "jpg", outputFile);
         } catch (Exception e) {
             e.printStackTrace();

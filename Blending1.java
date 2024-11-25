@@ -4,8 +4,8 @@ import java.awt.Color;
 public class Blending1 {
 
     static MyImage execute(MyImage var0, MyImage var1) {
-        int offsetX = 2300; // 任意のX
-        int offsetY = -800; // 任意のY
+        int offsetX = 1360; // 任意のX
+        int offsetY = 2400; // 任意のY
 
         int width1 = var0.width;
         int width2 = var1.width;

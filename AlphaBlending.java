@@ -3,7 +3,7 @@ import java.awt.Color;
 public class AlphaBlending{
 
     static MyImage execute (MyImage var0, MyImage var1, MyImage var2){
-        double alpha=0.5;
+        double alpha=0.7;
         int width1 = var0.width;
         int width2 = var1.width;
         int height1 = var0.height;
